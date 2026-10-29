@@ -1,0 +1,295 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    scroll-behavior: smooth; 
+}
+
+body { 
+    font-family: serif; 
+    background-color: #f4f7fb; 
+    color: #222; 
+    line-height: 1.6; 
+}
+
+nav { 
+    background-color: #024389; 
+    padding: 15px 10%; display: flex; 
+    
+    justify-content: space-between; 
+    align-items: center; 
+    position: sticky; 
+    top: 0; 
+    
+    z-index: 1000; 
+}
+
+nav h2 { 
+    color: white; 
+}
+
+nav ul { 
+    list-style: none; 
+    display: flex; 
+    gap: 20px; 
+}
+
+nav a { 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+nav a:hover { 
+    color: #ffd43b; 
+}
+
+.hero { 
+    min-height: 300px; 
+    background: linear-gradient( rgba(0, 45, 90, 0.75), rgba(0, 45, 90, 0.75) ), 
+    
+    url(schoollogo.png);
+
+    background-size: cover; 
+    background-position: center; 
+    
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    color: white; 
+    padding: 30px; 
+}
+
+.hero-content { 
+    max-width: 1000px; 
+} 
+
+.hero h1 { 
+    font-size: 50px; 
+    margin-bottom: 15px; 
+}
+
+.hero p { 
+    font-size: 20px; 
+    margin-bottom: 15px; 
+}
+
+.button { 
+    display: inline-block; 
+    background-color: #ffd43b; 
+    color: #063970; 
+    padding: 12px 25px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.button:hover { 
+    background-color: white; 
+}
+
+section { 
+    padding: 50px 10%; 
+} 
+
+section h2 { 
+    text-align: center; 
+    color: #063970; 
+    font-size: 32px; 
+    margin-bottom: 30px; 
+}
+
+.cards { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 10px; 
+} 
+
+.card { 
+    background-color: white; 
+    padding: 25px; 
+    border-radius: 10px; 
+    text-align: center; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    transition: 0.3s; 
+}
+
+.card:hover { 
+    transform: translateY(-5px); 
+} 
+
+.card h3 { 
+    color: #063970; 
+    margin-bottom: 10px; 
+} 
+
+.icon { 
+    font-size: 40px; 
+    margin-bottom: 10px; 
+}
+
+section { 
+    padding: 100px 5%; 
+} 
+
+#programs {
+    text-align: center;
+    padding: 30px 5%;
+}
+
+#programs h2 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.program-card {
+    background: white;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #ddd;
+    transition: 0.4s;
+}
+
+.pictures {
+    display: flex;
+    justify-content: center;
+    gap: 5x;
+    margin-top: 20px;
+
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+
+    transition: 0.5s;
+}
+
+.pictures img {
+    width: 18%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+}
+
+.program-card:hover .pictures {
+    opacity: 1;
+    max-height: 100px;
+}
+
+.program-card:hover h2 {
+    color: #024389;
+}
+
+#about {
+    background-color: #f4f7fb;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    color: #1e3a8a;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.about p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.about h3 {
+    color: #1e3a8a;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.about li {
+    list-style: none;
+    background-color: #eef4ff;
+    color: #333;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border-left: 4px solid #1e3a8a;
+    border-radius: 5px;
+}
+
+.about li:hover {
+    background-color: #dbeafe;
+    transform: translateX(5px);
+    transition: 0.3s;
+}
+
+.media { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+} 
+
+.media img { 
+    width: 100%; 
+    height: 220px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    transition: 0.3s; 
+} 
+
+.media img:hover { 
+    transform: scale(1.03); 
+}
+
+.video-container { 
+    max-width: 800px; 
+    margin: auto; 
+    text-align: center; 
+} 
+
+.video-container iframe { 
+    width: 100%; 
+    height: 400px; 
+    border: none; 
+    border-radius: 10px; 
+    margin-bottom: 15px; 
+}
+
+.cta { 
+    background-color: #063970; 
+    color: white; 
+    text-align: center; 
+} 
+
+.cta h2 { 
+    color: white; 
+} 
+
+.cta p { 
+    font-size: 18px; 
+}
+
+footer { 
+    background-color: #021f3d; 
+    color: white; 
+    text-align: center; 
+    padding: 25px; 
+} 
+
+footer p { 
+    margin: 5px; 
+}
+
